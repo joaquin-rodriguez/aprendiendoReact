@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.css";
 
 class Counter extends Component {
   state = {
-    count: 1,
-    imageUrl: "http://picsum.photos/200"
+    count: 0,
+    imageUrl: "http://picsum.photos/200",
+    tags: ["tag1", "tag 2", "tag 3"]
   };
 
   styles = {
@@ -23,6 +24,11 @@ class Counter extends Component {
           {this.formatCount()}
         </span>
         <button className="btn btn-secondary btn-sm">Increment</button>
+        <ul>
+          {this.state.tags.map(tag => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
       </div>
     );
   }
