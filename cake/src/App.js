@@ -12,9 +12,18 @@ function display() {
   alert(
     "Monika: So " +
       valor +
-      " huh? Wow that kind of a lame name but what was I expecting really?"
+      " huh? Wow that's kind of a lame name is that? But what was I expecting really?"
   );
-  alert("*I'll continue the game tommorow :)*");
+  alert(
+    "Monika: So last time you deleted me from your computer... That wasn't very nice of you. But I hold no grudge! Lets have fun and write some poems"
+  );
+  alert(
+    "Monika: can you see the image to my left? I ranndomly grabbed one for you from the web, make a poem about the image you get in the text box bellow!"
+  );
+  alert(
+    "Monika: You can streach it as much as you want to " + valor + " ( ͡° ͜ʖ ͡°) "
+  );
+  alert("*grab the text box by the bottom right corrner to streach it*");
 }
 
 function App() {
@@ -29,7 +38,15 @@ function App() {
       </form>
       <button id="send" onClick={display}>
         Submit Name
-      </button>
+      </button>{" "}
+      <br></br>
+      <img
+        className="monika"
+        src="https://vignette.wikia.nocookie.net/ddlc/images/6/65/Monika-0.png/revision/latest/top-crop/width/360/height/450?cb=20180213032429&path-prefix=es"
+      ></img>
+      <img className="image" src="http://picsum.photos/200"></img>
+      <br></br>
+      <textarea id="textBoy" className="textBox"></textarea>
     </div>
   );
 }

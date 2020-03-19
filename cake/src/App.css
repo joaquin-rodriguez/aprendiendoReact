@@ -6,3 +6,12 @@
 .hello {
   color: aliceblue;
 }
+
+.image {
+  margin-top: -200px;
+  height: 400px;
+}
+
+.monika {
+  margin-left: -400px;
+}
