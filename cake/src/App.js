@@ -26,6 +26,13 @@ function display() {
   alert("*grab the text box by the bottom right corrner to streach it*");
 }
 
+function displayPoem() {
+  let poemValor = document.getElementById("poem").value;
+  alert("Wow, that poem sucks! Let me share a poem with you");
+  alert(
+    "Roses are Red, Violets are Blue. Russian kids love to sniff glue. Last time we played you did a mess, unucky for you I have your IP address :)"
+  );
+}
 function App() {
   return (
     <div className="App">
@@ -46,7 +53,9 @@ function App() {
       ></img>
       <img className="image" src="http://picsum.photos/200"></img>
       <br></br>
-      <textarea id="textBoy" className="textBox"></textarea>
+      <textarea id="poem" className="textBoy"></textarea>
+      <br></br>
+      <button onClick={displayPoem}>Submit Poem</button>
     </div>
   );
 }
