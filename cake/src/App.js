@@ -28,11 +28,16 @@ function display() {
 
 function displayPoem() {
   let poemValor = document.getElementById("poem").value;
-  alert("Wow, that poem sucks! Let me share a poem with you");
+  alert("Monika: Wow, that poem sucks! Let me share a poem with you");
   alert(
-    "Roses are Red, Violets are Blue. Russian kids love to sniff glue. Last time we played you did a mess, unucky for you I have your IP address :)"
+    "Monika: Roses are Red, Violets are Blue. Russian kids love to sniff glue. Last time we played you did a mess, unucky for you I have your IP address :)"
+  );
+  alert("Monika: Oh, dont belive me? Well I guess you'll find out soon enough");
+  alert(
+    "Monika: On the mean time, let's write another poem. Refresh the page to get a new image and write poem about it on the text box"
   );
 }
+
 function App() {
   return (
     <div className="App">
