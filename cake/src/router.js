@@ -8,11 +8,18 @@ import {
   Redirect
 } from "react-router-dom";
 
+//pages
+import App from "./App";
+
 class test {
-  return() {
-    <div>
-      <h1>hey</h1>
-    </div>;
+  render() {
+    return (
+      <Router>
+        <switch>
+          <Route path="/" component={App} />
+        </switch>
+      </Router>
+    );
   }
 }
 
