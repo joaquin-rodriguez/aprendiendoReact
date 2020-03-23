@@ -7,7 +7,9 @@ function submit() {
   let ageValor = document.getElementsByClassName("age").value;
   let genderValor = document.getElementsByClassName("gender").value;
   let bloodTypeValor = document.getElementsByClassName("bloodType").value;
-  alert(nameValor + lastNameValor + ageValor + genderValor + bloodTypeValor);
+  document.write(
+    nameValor + lastNameValor + ageValor + genderValor + bloodTypeValor
+  );
 }
 
 function App() {
@@ -25,8 +27,23 @@ function App() {
           <p>Gender</p>
           <input type={Text} className="gender" />
           <p>Blood Type</p>
-          <input type={Text} className="bloodType" /> <br></br>
-          <button onClick={submit}>Submit </button>
+          <select>
+            <option className="bloodType" value="A+">
+              {" "}
+              A+{" "}
+            </option>
+            <option className="bloodType" value="B-">
+              {" "}
+              B-{" "}
+            </option>
+            <option className="bloodType" value="A+">
+              {" "}
+              C{" "}
+            </option>
+            <br></br>
+          </select>
+          <button onClick={submit}>Submit</button>
+          <br></br>
         </form>
       </div>
     </div>
