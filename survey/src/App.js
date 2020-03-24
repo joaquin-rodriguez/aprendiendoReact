@@ -1,8 +1,10 @@
 import React, { createElement } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Nav from "./Nav";
 
 function submit() {
-  let nameValor = document.getElementsByClassName("name").value;
+  let nameValor = document.getElementsById("test").value;
   let lastNameValor = document.getElementsByClassName("lastName").value;
   let ageValor = document.getElementsByClassName("age").value;
   let genderValor = document.getElementsByClassName("gender").value;
@@ -15,11 +17,12 @@ function submit() {
 function App() {
   return (
     <div className="App">
+      <Nav />
       <h1>Medical Record</h1>
       <div className="questions">
         <form>
           <p>Name</p>
-          <input type={Text} className="name" />
+          <input type={Text} className="name" id="test" />
           <p>Last Name</p>
           <input type={Text} className="lastName" />
           <p>Age</p>
@@ -42,6 +45,7 @@ function App() {
             </option>
             <br></br>
           </select>
+          <br></br>
           <button onClick={submit}>Submit</button>
           <br></br>
         </form>

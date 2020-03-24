@@ -7,3 +7,20 @@
   width: 30%;
   margin-left: 50px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(49, 49, 49);
+  color: white;
+}
+
+.links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
