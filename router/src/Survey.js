@@ -5,12 +5,13 @@ function display() {
   let lastName = document.getElementById("apellido").value;
   let age = document.getElementById("edad").value;
   let gender = document.getElementById("genero").value;
-  alert("your info is " + name + " " + lastName + " " + age + " " + gender);
+  alert("your info is " + name + ", " + lastName + ", " + age + ", " + gender);
 }
 
 function Survey() {
   return (
     <div className="questions">
+      <h2>Please Fill Out The Following Form</h2>
       <form>
         <p>Name</p>
         <input type={Text} className="name" id="nombre" />
