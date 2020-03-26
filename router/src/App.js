@@ -22,7 +22,7 @@ function App() {
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
+    <h1>Welcome To Notrix</h1>
   </div>
 );
 
