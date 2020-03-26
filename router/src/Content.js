@@ -28,7 +28,7 @@ function Content() {
 }
 
 function patientInfo() {
-  return document.write("info");
+  return document.write(test);
 }
 
 export default Content;

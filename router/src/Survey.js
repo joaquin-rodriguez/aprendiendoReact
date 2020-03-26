@@ -30,4 +30,8 @@ function Survey() {
   );
 }
 
+document.cookie = "test";
+
+let Test = document.cookie;
+
 export default Survey;
