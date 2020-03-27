@@ -2,14 +2,15 @@ import React from "react";
 import "./App.css";
 import "./Survey";
 
-function Content() {
+function popup() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
-    <div>
-      <h1>Content page</h1>
-      <div className="survey">
+    <div className="uuuhhh">
+      <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+      <modal modalIsOpen={modalIsOpen}>
         <table>
           <tr>
-            <th>Namw</th>
+            <th>Name</th>
             <th>Last Name</th>
             <th>Age</th>
             <th>Gender</th>
@@ -21,14 +22,9 @@ function Content() {
             <td>Male</td>
           </tr>
         </table>
-      </div>
-      <button onClick={patientInfo} />
+      </modal>
     </div>
   );
 }
 
-function patientInfo() {
-  return document.write(test);
-}
-
-export default Content;
+export default popup;
