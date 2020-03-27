@@ -1,4 +1,5 @@
-import React, { component } from "react";
+import React, { component, Component } from "react";
+import "/pages/poems";
 
 import {
   BrowserRouter as Router,
@@ -10,13 +11,15 @@ import {
 
 //pages
 import App from "./App";
+import poems from "./poems";
 
-class test {
+class router extends Component {
   render() {
     return (
       <Router>
         <switch>
           <Route path="/" component={App} />
+          <Route path="/poems" component={StorePoems} />
         </switch>
       </Router>
     );

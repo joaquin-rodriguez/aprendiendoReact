@@ -1,16 +1,14 @@
 import React from "react";
 
 function storePoems() {
-    return (
+  return (
     <div id="prompt">
-        <h1>poem 1</h1>
-            <h3>
-                <?php echo file_get_contents("secret.text"); ?>
-            </h3>
-            <form method="POST" action="save.php">
-                <input type="text" id="secret" name="secret"/>
-            <input type="submit" />
-        </form>
+      <h1>poem 1</h1>
+      <h3>alsdjkfh</h3>
+      <form method="POST" action="save.php">
+        <input type="text" id="secret" name="secret" />
+        <input type="submit" />
+      </form>
     </div>
   );
 }
