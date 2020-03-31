@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Modal from "react-modal";
 
 function content() {
+  let [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <div>
       <h2>content</h2>
-      <Modal isOpen={true}>
+      <button onClick={() => setModalIsOpen(true)}>Open modal</button>
+      <Modal isOpen={modalIsOpen}>
         <table>
           <tr>
             <th>Name</th>
