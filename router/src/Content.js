@@ -1,30 +1,82 @@
 import React from "react";
 import "./App.css";
-import "./Survey";
+import ReactDOM from "react-dom";
+import Modal from "react-modal";
 
-function popup() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+function content() {
   return (
-    <div className="uuuhhh">
-      <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
-      <modal modalIsOpen={modalIsOpen}>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-          </tr>
-          <tr>
-            <td>Joaquin</td>
-            <td>Rodriguez</td>
-            <td>21</td>
-            <td>Male</td>
-          </tr>
-        </table>
-      </modal>
+    <div>
+      <p>content</p>
     </div>
   );
 }
 
-export default popup;
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)"
+  }
+};
+
+Modal.setAppElement(content);
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = "#f00";
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.openModal}>Open Modal</button>
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <h2 ref={subtitle => (this.subtitle = subtitle)}>Hello</h2>
+          <button onClick={this.closeModal}>close</button>
+          <div>I am a modal</div>
+          <form>
+            <input />
+            <button>tab navigation</button>
+            <button>stays</button>
+            <button>inside</button>
+            <button>the modal</button>
+          </form>
+        </Modal>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, content);
+
+export default content;
