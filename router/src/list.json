@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Hello World",
+    "lastName": "Lmao is this working?",
+    "age": 16,
+    "gender": "Male"
+  }
+]
