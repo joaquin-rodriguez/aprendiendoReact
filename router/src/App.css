@@ -76,3 +76,10 @@ tr:nth-child(even) {
   margin-left: 500px;
   margin-top: -150px;
 }
+
+.somethingsomething {
+  border: 2px solid black;
+  max-width: 200px;
+  margin-left: 800px;
+  margin-top: 40px;
+}

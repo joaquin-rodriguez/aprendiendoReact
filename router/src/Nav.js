@@ -21,6 +21,9 @@ function Nav() {
         <Link style={navStyle} to="/content">
           <li>Patient info</li>
         </Link>
+        <Link style={navStyle} to="/LogIn">
+          <li>Log In</li>
+        </Link>
       </ul>
     </nav>
   );
