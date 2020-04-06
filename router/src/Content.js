@@ -6,7 +6,7 @@ class content extends React.Component {
   constructor() {
     super();
     this.state = {
-      show: false
+      show: false,
     };
   }
   handleModal() {

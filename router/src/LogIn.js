@@ -11,7 +11,7 @@ function logIn() {
         <input type={Text} />
         <p>Email</p>
         <input type={Text} />
-        <p>Birth Date</p>
+        <p>Password</p>
         <input type={Text} />
         <br></br>
         <button>Submit</button>
