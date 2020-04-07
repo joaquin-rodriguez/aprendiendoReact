@@ -31,11 +31,50 @@ class App extends React.Component {
       UserStore.isLoggedIn = false;
     }
   }
+
+  async doLogout() {
+    try {
+      let res = await fetch('/logout', {
+        method: 'post',
+        headers: {
+          'Accept': 'application/jason',
+          'Content-type': 'application/json'
+        }
+      });
+      let result = await res.json();
+      if (result && result.success) {
+        UserStore.isLoggedIn = false;
+        UserStore.username = '';
+      }
+      else {
+        UserStore.loading = false;
+        UserStore.isLoggedIn = false;
+      }
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }
+
   render() {
-    return <div className="app">
-      asdfasdf
-    </div>;
+    if (UserStore.loading) {
+      return (
+        <div className="app">
+          Loading Pkease wait
+        </div>
+      )
+    }
+
+    else {
+
+      return (
+        <div className="app">
+          Welcome {UserStore.username}
+          <SubmitButton />
+        </div>
+      )
+    }
   }
 }
 
-export default App;
+export default App
