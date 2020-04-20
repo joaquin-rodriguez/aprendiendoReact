@@ -1,34 +1,14 @@
-import React, { useState } from 'react';
-import { Button, Modal, Dropdown } from "react-bootstrap";
+import React from "react";
 
-class Info extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            show: false,
-        };
-    };
-    handleModal() {
-        this.setState({ show: !this.state.show });
+function About() {
+    return (
+        <div>
+            <h1>
+                Hello world, lets get back into this thaaang
+        </h1>
+        </div>
+    );
+};
 
-        render() {
-            return (
-                <div className="AboutNotrix">
-                    <h2>About Notrix</h2>
-                    <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            What do you whant to know?
-                        </Dropdown.Toggle>
+export default About;
 
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">What is Notrix?</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Can I trust Notrix with my Info?</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">What is the true nature of reality?</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>
-            );
-        };
-    };
-}
-export default Info
