@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import "./App.css";
 import Nav from "./Nav";
 import Content from "./Content";
@@ -19,7 +19,6 @@ function App() {
           <Route path="/content" component={Content} />
           <Route path="/survey" component={Survey} />
           <Route path="/About" component={About} />
-
         </Switch>
       </div>
     </Router>
