@@ -27,7 +27,7 @@ function Nav() {
         <Link style={navStyle} to="/Api">
           <li>Api</li>
         </Link>
-        <Link style={navStyle} to="/ian">
+        <Link style={navStyle} to="/Grid">
           <li>Grid</li>
         </Link>
       </ul>

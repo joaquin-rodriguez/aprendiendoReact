@@ -33,6 +33,13 @@ function App() {
 const Home = () => (
   <div>
     <h1>Welcome To Notrix</h1>
+    <form className={"getin"}>
+      <p>username:</p>
+      <input type={Text}></input>
+      <p>Password:</p>
+      <input type={Text}></input>
+      <button>Submit</button>
+    </form>
     <LogIn />
   </div>
 );

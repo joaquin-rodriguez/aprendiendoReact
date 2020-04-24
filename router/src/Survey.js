@@ -12,7 +12,7 @@ function Survey() {
   return (
     <div className="questions">
       <h2>Please Fill Out The Following Form</h2>
-      <form>
+      <form className={"forma"}>
         <p>Name</p>
         <input type={Text} className="name" id="nombre" />
         <p>Last Name</p>

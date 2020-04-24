@@ -3,7 +3,8 @@ import React from "react";
 function logIn() {
   return (
     <div className="account">
-      <h2>Create Your Notrix Account!</h2>
+      <br></br>
+      <p>Don't have an account yet? Create Your Notrix Account!</p>
       <form className="somethingsomething">
         <p>Name</p>
         <input type={Text} />

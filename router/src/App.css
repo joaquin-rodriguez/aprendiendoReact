@@ -44,6 +44,7 @@ th {
   background-color: grey;
   margin-left: 620px;
   width: 18%;
+  
 }
 
 table {
@@ -82,4 +83,35 @@ tr:nth-child(even) {
   max-width: 200px;
   margin-left: 680px;
   margin-top: 40px;
+}
+
+.katze {
+  width: 400px;
+}
+
+.cat {
+  width: 200px;
+}
+
+.kat {
+  width: 200px;
+}
+
+.ccat{
+  width: 200px;
+}
+
+.getin{
+  border: 2px solid black;
+  max-width: 200px;
+  margin-left: 680px;
+  margin-top: 40px;
+}
+
+.forma{
+  border: 2px solid black;
+  max-width: 200px;
+  margin-left: 680px;
+  margin-top: 40px;
+
 }
