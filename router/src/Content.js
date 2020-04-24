@@ -15,7 +15,7 @@ class content extends React.Component {
   render() {
     return (
       <div>
-        <h2>La miel mas amarga</h2>
+        <h2>User info</h2>
         <Modal show={this.state.show} onHide={() => this.handleModal()}>
           <Modal.Header closeButton>
             <Modal.Body closeButton>

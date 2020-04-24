@@ -21,11 +21,14 @@ function Nav() {
         <Link style={navStyle} to="/content">
           <li>Patient info</li>
         </Link>
-        <Link style={navStyle} to="/About">
-          <li>About</li>
+        <Link style={navStyle} to="/Media">
+          <li>Media</li>
         </Link>
         <Link style={navStyle} to="/Api">
           <li>Api</li>
+        </Link>
+        <Link style={navStyle} to="/ian">
+          <li>Grid</li>
         </Link>
       </ul>
     </nav>
