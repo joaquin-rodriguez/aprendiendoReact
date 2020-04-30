@@ -6,7 +6,7 @@ function Naverino() {
     return (
         <Navbar className="Naverino" bg="#ff5e6c" expand="lg">
             <Navbar.Brand href="/">
-                <img className="miniLogo" src='https://pluspng.com/img-png/circle-png-circle-png-hd-1600.png' />
+                <img className="miniLogo" src='https://www.stickpng.com/assets/images/59cfc06fd3b1936210a5ddb6.png' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
