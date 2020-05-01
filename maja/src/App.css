@@ -3,7 +3,7 @@
 }
 
 .Naverino{
-  background-color: #ff414e;
+  background-color: white
 }
 
 .Carousel{
@@ -16,9 +16,18 @@
 }
 
 .HomeBackground{
-  background-color: #fff5d7;
+  background-color: white
 }
 
-.jimbo{
-  background-color: white;
+.cat{
+    margin-top: -62px;
+}
+
+.background{
+  position: absolute;
+  margin-left: -210px;
+}
+.form{
+  width: 600px;
+  margin-left: 400px;
 }

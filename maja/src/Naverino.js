@@ -11,8 +11,8 @@ function Naverino() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/Shop">Also Shop</Nav.Link>
-                    <Nav.Link href="#link">About</Nav.Link>
+                    <Nav.Link href="/Shop">Shop</Nav.Link>
+                    <Nav.Link href="/Signup">Sing Up</Nav.Link>
                     <NavDropdown title="Shop" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Men</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Woman</NavDropdown.Item>

@@ -1,9 +1,13 @@
 import React from 'react';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Image } from 'react-bootstrap';
+import background from '../src/imagenes/background.jpg';
+import Images from './Images';
 
 function Shop() {
     return (
         <Container>
+            <Image className="background" src={background} fluid />
+            <Images />
             <Row>
                 <Col>
 
